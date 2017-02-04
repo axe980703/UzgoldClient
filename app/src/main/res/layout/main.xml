@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:text="Курс доллара Ташкент"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/mainColor"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:ems="4"
+                    android:textSize="25sp"
+                    android:maxLength="4"
+                    android:textColorHint="#B4B4B4"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:id="@+id/dollar_tashkent"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:text="сум"
+                    android:textSize="25sp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:text="Золото Ташкент"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/mainColor"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:ems="2"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:textColorHint="#B4B4B4"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:id="@+id/gold_tashkent"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:text="000 сум"
+                    android:textSize="25sp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Отправить изменения"
+            android:layout_marginTop="20dp"
+            android:width="150dp"
+            android:onClick="onUpdateClick"
+            android:id="@+id/sendbutton"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
